@@ -22,8 +22,8 @@ public class SignInPage extends BasePage {
 
     private By signInButton = By.id("btn1");
     private By logo = By.id("logo");
-    private By emailField = By.xpath(//input[@ng-model='Email']);
-    private By passwordField = By.xpath(//input[@ng-model='Password']);
+    private By emailField = By.xpath("//input[@ng-model='Email']");
+    private By passwordField = By.xpath("//input[@ng-model='Password']");
 
     public void clickSignInButton() {
         LOG.info("Click 'Sign in' Button");
