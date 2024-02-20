@@ -27,6 +27,8 @@ public class SignInPage extends BasePage {
     private By enterButton = By.id("enterbtn");
     private By errorMessage = By.id("errormsg");
     private By skipSignInButton = By.id("btn2");
+    private By signUp = By.id("email");
+    private By registerButton = By.id("enterimg");
 
     public void clickSignInButton() {
         LOG.info("Click 'Sign in' Button");
@@ -74,4 +76,16 @@ public class SignInPage extends BasePage {
         LOG.info("Click 'skip sign in button'");
         driver.findElement(skipSignInButton).click();
     }
+
+    public void email(String email) {
+        LOG.info(" insert email address");
+        driver.findElement(signUp).sendKeys(email);
+    }
+
+
+        public void clickRegisterButton () {
+            LOG.info("click register button");
+            driver.findElement(registerButton);
+        }
+
 }
