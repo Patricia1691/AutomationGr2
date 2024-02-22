@@ -45,6 +45,6 @@ public class BasePage {
             e.printStackTrace();
         }
     }
-    }
-
 }
+
+
