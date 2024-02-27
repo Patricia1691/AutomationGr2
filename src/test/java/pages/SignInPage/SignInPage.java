@@ -41,19 +41,19 @@ public class SignInPage extends BasePage {
 
     }
 
-    public boolean isLogoDysplayed() {
+    public boolean isLogoDisplayed() {
         LOG.info("Verify if Logo image is displayed");
         return driver.findElement(logo).isDisplayed();
     }
 
-    public void insertEmail(String Email) {
-        LOG.info("input 'Email address' in field");
-        driver.findElement(emailField).sendKeys(Email);
+    public void typeInSignInEmailField(String email) {
+        LOG.info("Typing email address in 'E mail' field");
+        driver.findElement(emailField).sendKeys(email);
     }
 
-    public void insertPassword(String Password) {
-        LOG.info("input'Password' in field");
-        driver.findElement(passwordField).sendKeys(Password);
+    public void typeInSignInPasswordField(String password) {
+        LOG.info("Typing password in 'Password' field");
+        driver.findElement(passwordField).sendKeys(password);
     }
 
     public void clickEnterButton() {
@@ -73,7 +73,7 @@ public class SignInPage extends BasePage {
     }
 
     public void clickSkipSignInButton() {
-        LOG.info("Click 'skip sign in button'");
+        LOG.info("Click 'Skip Sign in' button");
         driver.findElement(skipSignInButton).click();
     }
 
@@ -83,9 +83,9 @@ public class SignInPage extends BasePage {
     }
 
 
-        public void clickRegisterButton () {
-            LOG.info("click register button");
-            driver.findElement(registerButton);
-        }
+    public void clickRegisterButton() {
+        LOG.info("click register button");
+        driver.findElement(registerButton);
+    }
 
 }
